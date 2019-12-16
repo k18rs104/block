@@ -50,7 +50,19 @@
         [null, null, 'red', 'red', null, null, null, 'silver', 'silver', null],
         [null, null, null, 'red', 'red', null, 'silver', 'silver', null, null],
         [null, null, null, null, 'silver', 'silver', 'silver', null, null, null],
-        [null, null, null, null, null, 'silver', null, null, null, null]
+        [null, null, null, null, null, 'silver', null, null, null, null],
+         [null, null, null, null, null, null, null, null, null, null],
+         [null, null, null, null, null, null, null, null, null, null],
+         [null, 'silver', 'silver', 'silver', null, null, null, 'silver', 'silver', 'silver'],
+         [null, 'silver', 'red', 'silver', null, null, null, 'silver', 'blue', 'silver'],
+         [null, 'silver', 'silver', 'silver', null, null, null, 'silver', 'silver', 'silver'],
+         [null, null, null, null, null, null, null, null, null, null],
+         [null, null, null, null, null, 'silver', null, null, null, null],
+         [null, null, null, null, null, 'silver', null, null, null, null],
+         [null, null, null, null, null, null, null, null, null, null],
+         [null, null, null, null, null, null, null, null, null, null],
+         [null, null, 'silver', null, null, null, null, null, 'silver', null],
+         [null, null, null, 'silver', null, null, null, 'silver', null, null]
       ];
 
       for (j = 0; j < blockMap.length; j++) {
@@ -115,7 +127,7 @@
       ball.anchor.y = 0.5;
 
       ball.position.x = parseInt(BB.renderer.width * 0.5);
-      ball.position.y = 200;
+      ball.position.y = 400;
 
       ball.width = 10;
       ball.height = 10;
