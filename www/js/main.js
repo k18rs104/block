@@ -8,6 +8,8 @@
     SETTINGS_ACCELEROMETER_RELOAD_FREQ = 100,
     SETTINGS_PADDLE_ACCEL = 2.8,
     SETTINGS_POINT = 1000,
+    SETTINGS_POINT_RED = 500,
+    SETTINGS_POINT_GREEN = -1000,
     SETTINGS_POINT_SILVER = 200,
     SETTINGS_POINT_GOLD = 3000000;
 
@@ -46,7 +48,7 @@
         [null, null, null, null, 'red', 'red', 'blue', null, null, null],
         [null, null, null, 'red', 'red', null, null, 'blue', null, null],
         [null, null, 'red', 'red', null, null, null, null, 'blue', null],
-        [null, 'red', 'red', null, null, 'gold', null, null, 'silver', 'silver'],
+        [null, 'red', 'red', null, 'green', 'gold', 'green', null, 'silver', 'silver'],
         [null, null, 'red', 'red', null, null, null, 'silver', 'silver', null],
         [null, null, null, 'red', 'red', null, 'silver', 'silver', null, null],
         [null, null, null, null, 'silver', 'silver', 'silver', null, null, null],
@@ -54,15 +56,17 @@
          [null, null, null, null, null, null, null, null, null, null],
          [null, null, null, null, null, null, null, null, null, null],
          [null, 'silver', 'silver', 'silver', null, null, null, 'silver', 'silver', 'silver'],
-         [null, 'silver', 'red', 'silver', null, null, null, 'silver', 'blue', 'silver'],
+         [null, 'silver', 'blue', 'silver', null, null, null, 'silver', 'blue', 'silver'],
          [null, 'silver', 'silver', 'silver', null, null, null, 'silver', 'silver', 'silver'],
          [null, null, null, null, null, null, null, null, null, null],
          [null, null, null, null, null, 'silver', null, null, null, null],
+         [null, null, null, null, null, 'red', null, null, null, null],
          [null, null, null, null, null, 'silver', null, null, null, null],
          [null, null, null, null, null, null, null, null, null, null],
          [null, null, null, null, null, null, null, null, null, null],
          [null, null, 'silver', null, null, null, null, null, 'silver', null],
-         [null, null, null, 'silver', null, null, null, 'silver', null, null]
+         [null, null, null, 'silver', null, null, null, 'silver', null, null],
+         [null, null, null, null, 'silver', 'silver', 'silver', null, null, null],
       ];
 
       for (j = 0; j < blockMap.length; j++) {
@@ -83,6 +87,11 @@
     addBlock: function (x, y, color) {
       switch (color) {
         case "red":
+          var point = SETTINGS_POINT_RED;
+          break;
+        case "green":
+          var point = SETTINGS_POINT_GREEN;
+          break;
         case "blue":
           var point = SETTINGS_POINT;
           break;
