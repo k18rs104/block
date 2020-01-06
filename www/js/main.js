@@ -9,7 +9,7 @@
     SETTINGS_PADDLE_ACCEL = 2.8,
     SETTINGS_POINT = 1000,
     SETTINGS_POINT_RED = 500,
-    SETTINGS_POINT_GREEN = -1000,
+    SETTINGS_POINT_GREEN = 2000,
     SETTINGS_POINT_SILVER = 200,
     SETTINGS_POINT_GOLD = 3000000;
 
@@ -161,7 +161,7 @@
       BB.paddle.position.x = parseInt(BB.renderer.width * 0.5);
       BB.paddle.position.y = BB.renderer.height - 60;
 
-      BB.paddle.width = 60;
+      BB.paddle.width = 70;
       BB.paddle.height = 10;
 
       BB.paddle.accel = 0;
